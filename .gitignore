@@ -1,3 +1,6 @@
+*.png
+*.jpeg
+server/tmp
 # Logs
 logs
 *.log
