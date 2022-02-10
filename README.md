@@ -1,0 +1,2 @@
+# input_preview_image_rotate
+htmlのフォームの画像プレビューを回す
