@@ -8,8 +8,7 @@ function imagePreview(event) {
   var rotateButton = document.getElementById("rotateButton");
    
   if(previewImage != null) {
-    preview.removeChild(previewImage);
-    preview.removeChild(rotateButton);
+    preview.innerHTML = "";
   }
 
   reader.onload = function() {
