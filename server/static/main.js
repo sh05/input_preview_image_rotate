@@ -9,6 +9,7 @@ function imagePreview(event) {
    
   if(previewImage != null) {
     preview.innerHTML = "";
+    deg = 0;
   }
 
   reader.onload = function() {
