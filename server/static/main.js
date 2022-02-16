@@ -181,25 +181,18 @@ function rotateImage() {
   ctx.restore();
   tmpCanvas = tmpCtx = null;
 
+  var preview = document.getElementById("preview");
+  var pastDisplayImg = document.getElementById("previewImage");
 
   var displaySrc = ctx.canvas.toDataURL('image/jpeg', .9);
   var displayImg = document.createElement('img');
 
   displayImg.id = 'previewImage';
   displayImg.setAttribute('src', displaySrc);
-  displayImg.setAttribute('alt', document.getElementById("previewImage").alt);
+  displayImg.setAttribute('alt', pastDisplayImg.alt);
   displayImg.setAttribute('style','max-width:90%;max-height:90%');
 
-  var rotateButton = document.getElementById("rotateButton");
-  var btn = document.createElement("button");
-  btn.innerHTML = "右回転";
-  btn.setAttribute("type", 'button');
-  btn.setAttribute("onclick", 'rotateImage()')
-
-  var preview = document.getElementById("preview");
-  preview.innerHTML = "";
-  preview.appendChild(btn);
-  preview.innerHTML += "<br>";
+  preview.removeChild(pastDisplayImg);
   preview.appendChild(displayImg);
 
 }
