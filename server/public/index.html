@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="/static/main.css">
-</head>
-<body>
-<form action="/image" method="post" class="form-example" enctype="multipart/form-data">
-  <div class="form-example">
-    <label for="name">Enter your name: </label>
-    <input type="text" name="name" id="name" required>
-  </div>
-  <div class="form-example">
-    <label for="image">Upload your Image: </label>
-    <input type="file" name="image" id="image" onChange="imagePreview(event)" required>
-    <div id="preview"></div>
-  </div>
-  <div class="form-example">
-    <input type="submit" value="Subscribe!">
-  </div>
-</form>
-  
-  <script src="/static/main.js"></script>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>画像をアップロードする前にプレビュー、縮小する</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <h1>Image縮小サンプル</h1>
+    <p>
+      <input type="file" id="file" accept="image/*">
+      <div id="preview">
+      </div>
+      <br><input type="button" id="submit" value="アップロード">
+    </p>
+    <script src="/static/main.js"></script>
+    <script>
+    </script>
+  </body>
 </html>

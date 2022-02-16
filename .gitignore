@@ -1,6 +1,7 @@
 *.png
 *.jpeg
 server/tmp
+.DS_store
 # Logs
 logs
 *.log
